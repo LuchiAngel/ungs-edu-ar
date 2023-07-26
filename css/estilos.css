@@ -1,0 +1,322 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lekton", sans-serif;
+}
+
+/*CUERPO*/
+.cuerpo {
+  background-color: #212A3E;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+/*Items para alinear texto y dar margenes*/
+.item, .item3, .item2 {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.item2 {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.item3 {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.item4 {
+  flex: 1;
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.item4 h2, .item4 h5, .item4 h6, .item4 h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.item4 h5, .item4 h6 {
+  font-size: 1.5rem;
+}
+.item4 h6:hover {
+  color: aqua;
+}
+.item4 p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*LETRA Y COLOR*/
+main h1, main h4, main h3, main h2, main .item4 h3, .item4 main h3, main .item4 h5, .item4 main h5, main .item4 h6, .item4 main h6 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: normal;
+}
+main h4 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: none;
+}
+main p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*HEADER*/
+header {
+  background-color: #146C94;
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+header img {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  display: grid;
+}
+header ul {
+  width: 100%;
+  background-color: #146C94;
+  font-size: 0.1rem;
+  display: grid;
+}
+header ul a {
+  color: white;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+header ul a:hover {
+  color: black;
+}
+
+/*footer*/
+.pie {
+  background-color: #146C94;
+  color: white;
+  padding: 20px;
+  font-size: medium;
+}
+.pie .direccion p {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.presentacion2 iframe {
+  width: 60%;
+  margin-left: 0;
+  margin-top: 20px;
+  height: 60%;
+}
+
+/*banner redes*/
+.banner {
+  background-color: #212A3E;
+  display: grid;
+}
+.banner .redes .logosredes img {
+  justify-content: end;
+}
+.banner .redes a h4:hover {
+  color: blueviolet;
+}
+
+.divTitulo1 h1, .divTitulo1 main h2, main .divTitulo1 h2, .divTitulo1 main .item4 h5, main .item4 .divTitulo1 h5, .divTitulo1 .item4 main h5, .item4 main .divTitulo1 h5, .divTitulo1 main .item4 h6, main .item4 .divTitulo1 h6, .divTitulo1 .item4 main h6, .item4 main .divTitulo1 h6, .divTitulo1 main h3, main .divTitulo1 h3, .divTitulo1 main h4, main .divTitulo1 h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.divTitulo1 h1:hover, .divTitulo1 main h2:hover, main .divTitulo1 h2:hover, .divTitulo1 main .item4 h5:hover, main .item4 .divTitulo1 h5:hover, .divTitulo1 .item4 main h5:hover, .item4 main .divTitulo1 h5:hover, .divTitulo1 main .item4 h6:hover, main .item4 .divTitulo1 h6:hover, .divTitulo1 .item4 main h6:hover, .item4 main .divTitulo1 h6:hover, .divTitulo1 main h3:hover, main .divTitulo1 h3:hover, .divTitulo1 main h4:hover, main .divTitulo1 h4:hover {
+  color: blueviolet;
+}
+.divTitulo1 img {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*TITULOS SECUNDARIOS*/
+.divTitulo2 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.divTitulo2 h2:hover {
+  color: blueviolet;
+}
+.divTitulo2 img {
+  width: 60%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*TITULOS TERCIARIOS*/
+.divTitulo3 {
+  display: flex;
+}
+.divTitulo3 h3:hover {
+  color: blueviolet;
+}
+.divTitulo3 img {
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.divTitulo3 h3 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.divTitulo3 h4 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+/*GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+.grid-container > * {
+  grid-column: span 12;
+}
+.grid-container > *:nth-child(odd) {
+  grid-column: span 6;
+}
+.grid-container > *:nth-child(3n+2) {
+  grid-column: span 4;
+}
+.grid-container > *:nth-child(3n+1) {
+  grid-column: span 2;
+}
+.grid-container > *:nth-child(3n+3) {
+  grid-column: span 2;
+}
+
+.containerHeader { /*header*/
+  display: grid;
+  grid-template-rows: repeat(1, 4fr);
+  border: 3px solid cornflowerblue;
+}
+
+.container1 { /*titulo principal*/
+  display: grid;
+  border: 3px solid cornflowerblue;
+  grid-template-columns: repeat(1, 4fr);
+}
+
+.container2 { /*Titulos2*/
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  border: 3px solid cornflowerblue;
+}
+
+.container3 { /*Titulos3*/
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  border: 3px solid cornflowerblue;
+}
+
+.containerRedes { /*REDES*/
+  display: grid;
+  border: 3px solid cornflowerblue;
+  grid-template-columns: repeat(1, 4fr);
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (max-width: 400px) {
+  .divTitulo1,
+  .divTitulo2,
+  .divTitulo3,
+  .redes,
+  .presentacion {
+    grid-column: span 12;
+  }
+  .container1{
+    display: grid;
+  border: 3px solid cornflowerblue;
+  grid-template-columns: repeat(1,2fr);
+
+  }
+  .container2{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    border: 3px solid cornflowerblue;
+  }
+  .container3{
+    display: grid;
+    grid-template-columns: repeat(1,4fr);
+    border: 3px solid cornflowerblue;
+  }
+}
+/* Estilos para dispositivos de pantalla mediana */
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .divTitulo1,
+  .divTitulo2,
+  .divTitulo3,
+  .redes,
+  .presentacion {
+    grid-column: span 6;
+  }
+  .cuerpo {
+    grid-column: span 12;
+  }
+  .container3{ 
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+      border: 3px solid cornflowerblue;
+    }
+  }
+}
+/* Estilos para dispositivos de pantalla grande */
+@media screen and (min-width: 1025px) {
+  .divTitulo1,
+  .divTitulo2,
+  .divTitulo3,
+  .redes,
+  .presentacion {
+    grid-column: span 4;
+  }
+  .cuerpo {
+    grid-column: span 8;
+  }
+  .container3 { /*Titulos3*/
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    border: 3px solid cornflowerblue;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

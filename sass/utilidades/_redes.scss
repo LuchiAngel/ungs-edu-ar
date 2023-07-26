@@ -1,0 +1,15 @@
+/*banner redes*/
+
+.banner{
+    background-color: $azulfondo;
+    display: grid;
+    .redes .logosredes img{
+  
+        justify-content: end;
+      }
+    .redes a h4:hover{
+        color: $colorsombra;
+        ;
+       }
+    
+}

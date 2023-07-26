@@ -1,0 +1,80 @@
+@mixin margenes($bottom,$left,$right,$top){
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+}
+.divTitulo1{
+    h1{
+        width:100%;
+        @include margenes(20px,30px,20px,30px);
+        
+        
+     }
+    /*TRANSICION*/
+    h1:hover{
+        color: $colorsombra;
+        text-decoration: underline;
+        font-size: 2rem;
+       }
+    img{
+        width: 75%;
+        @include margenes(10px,10px,0,0);
+        
+       }
+
+}
+
+/*TITULOS SECUNDARIOS*/
+.divTitulo2 {
+    h4{
+        @include margenes(20px,480px,0,0);
+        
+    
+     }
+    /*TRANSICION*/
+    h3:hover{
+        color: $colorsombra;
+        text-decoration: underline;
+        font-size: 2rem;
+       }
+    img{
+        width: 60%;
+        @include margenes(10px,10px,0,0);
+        
+     }
+    
+ }
+ /*TITULOS TERCIARIOS*/
+.divTitulo3{
+    display: flex;
+    /*TRANSICION*/
+    h3:hover{
+        color: $colorsombra;
+        text-decoration: underline;
+        font-size: 2rem;
+       }
+    img{
+        width: 80%;
+        @include margenes(10px,20px,0,0);
+        
+     }
+    h3{
+        @include margenes(10px,20px,0,30px);
+        
+    
+     }
+    h4{
+        @extend h3;
+     }
+ }
+
+ /*Boton*/
+.boton {
+    border: grey solid 5px; 
+}
+.boton:focus{
+    border:dotted burlywood 5px;
+}
+
+

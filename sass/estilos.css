@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lekton", sans-serif;
+}
+
+/*CUERPO*/
+.cuerpo {
+  background-color: #212A3E;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+/*Items para alinear texto y dar margenes*/
+.item, .item3, .item2 {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.item2 {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.item3 {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.item4 {
+  flex: 1;
+  text-align: start;
+  margin-top: 30px;
+  margin-left: 20px;
+  /*TRANSICION*/
+}
+.item4 h2, .item4 h5, .item4 h6, .item4 h3, .item4 .divTitulo3 h4, .divTitulo3 .item4 h4 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: 2s;
+}
+.item4 h5, .item4 h6 {
+  font-size: 1.5rem;
+}
+.item4 h6:hover {
+  color: aqua;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.item4 p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*LETRA Y COLOR*/
+main h1, main h4, main h3, main .divTitulo3 h4, .divTitulo3 main h4, main h2, main .item4 h3, .item4 main h3, main .item4 h5, .item4 main h5, main .item4 h6, .item4 main h6 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main h3, main .divTitulo3 h4, .divTitulo3 main h4 {
+  font-weight: normal;
+}
+main h4 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: none;
+}
+main p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*HEADER*/
+header {
+  background-color: #146C94;
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+header img {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  display: grid;
+}
+header ul {
+  width: 100%;
+  background-color: #146C94;
+  font-size: 0.1rem;
+  display: grid;
+}
+header ul a {
+  color: white;
+}
+header ul a:hover {
+  color: black;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+/*footer*/
+.pie {
+  background-color: #146C94;
+  color: white;
+  padding: 20px;
+}
+.pie h3, .pie .divTitulo3 h4, .divTitulo3 .pie h4 {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.presentacion2 iframe {
+  width: 60%;
+  margin-left: 0;
+  margin-top: 20px;
+  height: 60%;
+}
+
+/*banner redes*/
+.banner {
+  background-color: #212A3E;
+  display: grid;
+}
+.banner .redes .logosredes img {
+  justify-content: end;
+}
+.banner .redes a h4:hover {
+  color: blueviolet;
+}
+
+.divTitulo1 {
+  /*TRANSICION*/
+}
+.divTitulo1 h1, .divTitulo1 main h2, main .divTitulo1 h2, .divTitulo1 main .item4 h5, main .item4 .divTitulo1 h5, .divTitulo1 .item4 main h5, .item4 main .divTitulo1 h5, .divTitulo1 main .item4 h6, main .item4 .divTitulo1 h6, .divTitulo1 .item4 main h6, .item4 main .divTitulo1 h6, .divTitulo1 main h3, main .divTitulo1 h3, .divTitulo1 main h4, main .divTitulo1 h4 {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.divTitulo1 h1:hover, .divTitulo1 main h2:hover, main .divTitulo1 h2:hover, .divTitulo1 main .item4 h5:hover, main .item4 .divTitulo1 h5:hover, .divTitulo1 .item4 main h5:hover, .item4 main .divTitulo1 h5:hover, .divTitulo1 main .item4 h6:hover, main .item4 .divTitulo1 h6:hover, .divTitulo1 .item4 main h6:hover, .item4 main .divTitulo1 h6:hover, .divTitulo1 main h3:hover, main .divTitulo1 h3:hover, .divTitulo1 main h4:hover, main .divTitulo1 h4:hover {
+  color: blueviolet;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.divTitulo1 img {
+  width: 75%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+/*TITULOS SECUNDARIOS*/
+.divTitulo2 {
+  /*TRANSICION*/
+}
+.divTitulo2 h4 {
+  margin-bottom: 20px;
+  margin-left: 480px;
+  margin-right: 0;
+  margin-top: 0;
+}
+.divTitulo2 h3:hover, .divTitulo2 .divTitulo3 h4:hover, .divTitulo3 .divTitulo2 h4:hover {
+  color: blueviolet;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.divTitulo2 img {
+  width: 60%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+/*TITULOS TERCIARIOS*/
+.divTitulo3 {
+  display: flex;
+  /*TRANSICION*/
+}
+.divTitulo3 h3:hover, .divTitulo3 h4:hover {
+  color: blueviolet;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.divTitulo3 img {
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 0;
+}
+.divTitulo3 h3, .divTitulo3 h4 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 30px;
+}
+/*Boton*/
+.boton {
+  border: grey solid 5px;
+}
+
+.boton:focus {
+  border: dotted burlywood 5px;
+}
+
+/*GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+.grid-container > * {
+  grid-column: span 12;
+}
+.grid-container > *:nth-child(odd) {
+  grid-column: span 6;
+}
+.grid-container > *:nth-child(3n+2) {
+  grid-column: span 4;
+}
+.grid-container > *:nth-child(3n+1) {
+  grid-column: span 2;
+}
+.grid-container > *:nth-child(3n+3) {
+  grid-column: span 2;
+}
+
+.container5 { /*header*/
+  display: grid;
+  grid-template-rows: repeat(1, 4fr);
+  border: 3px solid cornflowerblue;
+}
+
+.container1 { /*titulo principal*/
+  display: grid;
+  border: 3px solid cornflowerblue;
+  grid-template-columns: repeat(1, 4fr);
+}
+
+.container2 { /*Titulos2*/
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  border: 3px solid cornflowerblue;
+}
+
+.container { /*Titulos3*/
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  border: 3px solid cornflowerblue;
+}
+
+.container3 { /*REDES*/
+  display: grid;
+  border: 3px solid cornflowerblue;
+  grid-template-columns: repeat(1, 4fr);
+}
+
+/* Estilos para dispositivos de pantalla pequeña MOBILE*/
+@media screen and (max-width: 400px) {
+  .divTitulo1,
+  .divTitulo2,
+  .redes,
+  .presentacion {
+    grid-column: span 12;
+  }
+}
+/* Estilos para dispositivos de pantalla mediana TABLET */
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .divTitulo1,
+  .divTitulo2,
+  .redes,
+  .presentacion {
+    grid-column: span 6;
+  }
+  .cuerpo {
+    grid-column: span 12;
+  }
+}
+/* Estilos para dispositivos de pantalla grande DESKTOP*/
+@media screen and (min-width: 1025px) {
+  .divTitulo1,
+  .divTitulo2,
+  .redes,
+  .presentacion {
+    grid-column: span 4;
+  }
+  .cuerpo {
+    grid-column: span 8;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

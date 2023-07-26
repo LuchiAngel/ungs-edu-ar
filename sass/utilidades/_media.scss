@@ -1,0 +1,118 @@
+/*GRID*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    > * {
+        grid-column: span 12;
+      }
+    > *:nth-child(odd) {
+        grid-column: span 6;
+      }
+    > *:nth-child(3n+2) {
+        grid-column: span 4;
+      }
+    > *:nth-child(3n+1){
+        grid-column: span 2;
+      }
+    > *:nth-child(3n+3) {
+    grid-column: span 2;
+      }
+
+}
+.containerHeader {/*header*/
+    display: grid;
+    grid-template-rows: repeat(1, 4fr);
+    border: 3px solid $colorborde;
+  }
+.container1 {/*titulo principal*/
+    display: grid;
+    border: 3px solid $colorborde;
+    grid-template-columns: repeat(1, 4fr);
+    
+  }
+.container2 { /*Titulos2*/
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    border: 3px solid $colorborde;
+  }
+.container3 {/*Titulos3*/
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    border: 3px solid $colorborde;
+  }
+
+.containerRedes {/*REDES*/
+    display: grid;
+    border: 3px solid $colorborde;
+    grid-template-columns: repeat(1, 4fr);
+    
+}
+/* Estilos para dispositivos de pantalla pequeña MOBILE*/
+  
+@media screen and (max-width: 400px) {
+    .divTitulo1,
+    .divTitulo2,
+    .divTitulo3,
+    .redes,
+    .presentacion {
+      grid-column: span 12;
+    }
+    .container1{
+      display: grid;
+    border: 3px solid cornflowerblue;
+    grid-template-columns: repeat(1,2fr);
+  
+    }
+    .container2{
+      @extend .container1;
+    }
+    .container3{
+      @extend .container1;
+      grid-template-columns: repeat(1,4fr);
+      
+    }
+  }
+  
+  /* Estilos para dispositivos de pantalla mediana TABLET */
+  
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+    .divTitulo1,
+    .divTitulo2,
+    .divTitulo3,
+    .redes,
+    .presentacion {
+      grid-column: span 6;
+    }
+    
+    .cuerpo {
+      grid-column: span 12;
+    }
+    .container3{ 
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+      border: 3px solid cornflowerblue;
+    }
+  }
+  
+  /* Estilos para dispositivos de pantalla grande DESKTOP*/
+  
+@media screen and (min-width: 1025px) {
+    .divTitulo1,
+    .divTitulo2,
+    .divTitulo3,
+    .redes,
+    .presentacion {
+      grid-column: span 4;
+    }
+    
+    .cuerpo {
+      grid-column: span 8;
+    }
+    .container3 { /*Titulos3*/
+      display: grid;
+      grid-template-columns: repeat(4, 3fr);
+      border: 3px solid cornflowerblue;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/*HEADER*/
+header  {
+    background-color: $azulfondo2;
+    width: 100%;
+    display: grid;
+    text-align: center;
+
+    img{
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        display: grid;
+    }
+    ul{
+        width: 100%;
+        background-color: $azulfondo2;
+        
+        font-size: 0.1rem;
+        display: grid;
+        a{
+            color: $colorletras;  
+        }
+        a:hover{
+            color:$colorsombra0;
+            text-decoration:underline;
+            font-size: 2rem;
+        }
+    }
+}
+/*footer*/
+.pie{
+    
+    background-color: $azulfondo2;
+    color: $colorletras;
+    padding: 20px;
+    p{
+        text-align: start; 
+        margin-top: 30px;
+        
+    }  
+}
+.presentacion2 {
+    iframe{ 
+    width: 60%;
+    margin-left: 0;
+    margin-top: 20px;
+    height: 60%;   
+    }
+}

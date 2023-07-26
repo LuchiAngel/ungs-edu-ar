@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Lekton', sans-serif;
+}
+
+
+/*CUERPO*/
+
+.cuerpo{
+    background-color: $azulfondo;
+    width: 100%;
+    
+ }
+.card {
+    display:flex ;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+
+/*Items para alinear texto y dar margenes*/
+.item {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+  } 
+
+.item2 {
+    @extend .item;
+    text-align: end;
+    margin-top: 10px;
+  } 
+.item3 {
+    @extend .item;
+    text-align: start;
+    margin-top: 10px;
+} 
+.item4 {
+    flex: 1;
+    text-align: start;
+    margin-top: 30px;
+    margin-left: 20px;
+    h2{
+        color: $colorletras;
+        font-size: 2rem;
+        font-weight: $negrita;
+        text-transform: uppercase;
+        transition: 2s;
+      }
+    h3{
+      @extend h2;
+      }
+    h5{
+      @extend h2;
+      font-size: 1.5rem;
+      }
+    h6{
+      @extend h5;
+      }
+      /*TRANSICION*/
+    h6:hover{
+        color: $celeste;
+        text-decoration: underline;
+        font-size: 2rem;
+      }
+    p{
+        color: $colorletras;
+        font-size: 1.5rem;
+    
+      }
+}
+
+/*LETRA Y COLOR*/
+main{  
+    h1{
+    color: $colorletras;
+    font-size: 2rem;
+    font-weight: $negra;
+    text-transform: uppercase;
+    }
+    h2{
+        @extend h1;
+    }
+    h3{
+        @extend h1;
+        font-weight: normal;    
+    }
+    h4{
+        @extend h1;
+        font-size: 1.5rem;
+        font-weight: $negrita;
+        text-transform: none;    
+    }
+    p{
+        color: $colorletras;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+  /* Estilos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
